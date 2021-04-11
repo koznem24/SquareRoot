@@ -1,13 +1,24 @@
 package com.koznem;
 
-/**
- * Hello world!
- *
- */
+import java.util.Scanner;
+
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    static Scanner scanner = new Scanner(System.in);
+    public static void main( String[] args ) {
+
+        SquareRoot squareRoot = new SquareRoot();
+
+        double a,b,c;
+        System.out.println("a = ");
+        a = scanner.nextDouble();
+
+        System.out.println("b = ");
+        b = scanner.nextDouble();;
+
+        System.out.println("c = ");
+        c = scanner.nextDouble();
+
+        System.out.println(new SquareRoot().go(a,b,c));
     }
 }
